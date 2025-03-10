@@ -1,0 +1,121 @@
+/*navbar start*/
+/*for desktop*/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+.nav-logo{
+    text-align: left;
+}
+
+.nav-heading{
+    text-align: right;
+}
+
+
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+}
+
+.nav-menu a{
+    padding: 7px 15px;
+    margin: 20px 3px;
+    border-radius: 4px;
+}
+/*navbar end*/
+
+/*profile start*/
+
+.top-weather-icon{
+
+    width: 120px;
+    height: 120px;
+ 
+
+    transition: width 3s, transform 3s;
+}
+
+
+.top-weather-icon:hover{
+    height: 150px;
+    width: 150px
+}
+
+.profile-desc p{
+    color: #6e7e7e;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.bottom-weather-icon{
+
+    width: 120px;
+    height: 120px;
+
+
+    transition: width 3s, transform 3s;
+}
+
+
+.bottom-weather-icon:hover{
+    height: 150px;
+    width: 150px
+}
+
+.profile{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/*profile end*/
+/*About me start*/
+
+.about-me-img img{
+    margin-top: 105px;
+    margin-right: 90px;
+    height: 310px;
+    width: 280px;
+}
+.about-me-dsec p{
+    text-align: left;
+    padding-left: 10px;
+}
+.about-me{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/*About me end*/
+ 
+/*contact me start*/
+
+.contact-msg button{
+    width: 150px;
+}
+.contact-me{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/*contact me end*/

@@ -1,0 +1,414 @@
+/*navbar start*/ 
+*{
+box-sizing: border-box;
+font-family: "Fira Sans", serif;
+}
+body{
+    margin: 0;
+    
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+.dotted-hr{
+    border: dotted 6px whitesmoke;
+    border-bottom: none;
+    margin: 15px auto;
+    width: 110px;
+}
+
+
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/*for mobile*/
+[class*="col-"]{
+    width: 100%;   
+}
+
+
+.navbar{
+    background-color: rgb(45, 96, 105);
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    
+}
+
+.nav-menu a{
+    background-color: #508b91;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.nav-menu a:hover{
+    background-color: #6e7e7e;
+}
+
+.navbar::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+/*navbar end*/
+/*profile start*/
+
+p{
+    font-size: 1.2rem;
+    text-align: center;  
+}
+
+.profile{
+    padding: 130px 10px;
+    text-align: center;
+    position: relative;
+    height: 560px;
+    width: 100%;
+}
+
+.top-weather-icon{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 10;
+    top: 10px;
+    transition: transform 2s;
+}
+
+
+.top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile-desc h1{
+
+    font-family: "Gloria Hallelujah", cursive;
+    
+}
+
+.profile-desc p{
+    color: #6e7e7e;
+    text-align: center;
+    width: 90%;
+    margin: 0px auto 20px auto;
+
+}
+
+.bottom-weather-icon{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 60px;
+    bottom: 20px;
+    transition: transform 2s;
+}
+
+
+.bottom-weather-icon:hover{
+    transform:rotate(-360deg);
+    font-size: 3rem;
+}
+.profile{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/*profile end*/
+
+/*About me start*/
+
+.about-me{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", serif;
+}
+.CV-button{
+    background-color: rgb(25, 53, 28);
+    color: blanchedalmond;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+.about-me-img img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+
+}
+
+.identity{
+    text-align: left;
+    padding-left: 25px;
+}
+.about-me a{
+    font-size: 1.2rem;
+}
+.about-me{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+/*About me end*/
+/*professional Experiance start*/
+
+.professional-experiance{
+
+    padding: 1% 1%;
+
+}
+.professional-experiance .card{
+    background-color: #a39e9e;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+
+    
+}
+.professional-experiance .card:hover{
+    box-shadow: 0 4px 8px 5px black;
+
+}   
+.card-icon{
+    text-align: center;
+
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 70px;
+    border: 4px solid rgb(255, 208, 208);
+    border-radius: 50%;
+    padding: 5px;
+
+}
+.card-title{
+    position: relative;
+    text-transform: uppercase;
+}
+
+.card-desc li{
+    padding-top: 7px;
+}
+.card-title h2{
+    background-color: #404646;
+    text-align: center;
+    color: azure;
+    padding: 5px 0px;
+    width: 100%;
+    border-radius: 5px;
+}
+.skills-conteiner{
+    padding-right: 45px;
+}
+.skills-conteiner li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 32px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skills-conteiner li::before{
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 0%;
+    border-radius: 7px;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(96, 96, 165);
+
+}
+
+.skills-conteiner li::after{
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 0%;
+    border-radius: 7px;
+    width: 0;
+    height: 10px;
+    background-color: rgb(53, 53, 97);
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: ;
+}
+.skills-conteiner li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.skills-conteiner li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 60%;
+    }
+}
+
+
+.professional-experiance{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/*frofessional Experiance end*/
+
+/*contact me start*/
+
+.contact-me{
+    width: 100%;
+    background-color: #39a4ac;
+
+} 
+.achievment h2{
+    color: blanchedalmond;
+    text-align: center;
+    text-transform: uppercase;
+}
+.achievment ol{
+    padding-left: 60px;
+}
+
+.achievment li{
+    padding: 5% 3%;
+    color: white;
+}
+
+.contact-msg{
+    text-align: center;
+
+}
+.contact-msg h2{
+    color: blanchedalmond;
+    text-transform: uppercase;
+}
+.contact-msg input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+.contact-msg button{
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    color: bisque;
+    width: 100px;
+}
+.contact-links h2{
+    color: blanchedalmond;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-links button{
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+    font-size: 32px;
+    margin: 10px;
+    padding: 5px;
+    width: 50px;
+    position: relative;
+}
+.contact-links button:hover{
+    background-color: rgb(167, 163, 163);
+
+}
+
+.youtube{
+    color: red;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+
+
+}
+.facebook{
+    color: #2f5896;
+    position: absolute;
+    bottom: 18px;
+    left: 190px;
+
+}
+.telegram{
+    color: #388f96;
+    position: absolute;
+    bottom: 86px;
+    left: 300px;
+}
+.phone{
+    color: rgb(23, 101, 133);
+    position: absolute;
+    bottom: 35px;
+    left: 140px
+}
+.whatsapp{
+    color: rgb(56, 168, 56);
+    position: absolute;
+    left: 245px;
+    bottom: 103px;
+
+}
+
+.contact-me{
+
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/*contact me end*/
